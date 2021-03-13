@@ -1,0 +1,22 @@
+{
+  "name": "gotta-eat",
+  "version": "1.0.0",
+  "description": "Log burgers eaten and list burgers-to-be-eaten using this simple full-stack app.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katsign/gotta-eat.git"
+  },
+  "keywords": [
+    "burger"
+  ],
+  "author": "katsign",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/katsign/gotta-eat/issues"
+  },
+  "homepage": "https://github.com/katsign/gotta-eat#readme"
+}
