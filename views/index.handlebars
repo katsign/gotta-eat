@@ -1,7 +1,7 @@
-<h2>Add Burger</h2>
-<form id="create-form">
+<div class="container">
+
+<form class="form-inline" id="create-form">
   <div class="form-group">
-    <label for="brgr">Burger Type</label>
     <input type="text"
            id="brgr"
            name="burger_name"
@@ -10,16 +10,14 @@
            aria-label="Burger Name"
            aria-describedby="add-brgr">
            <div class="input-group-append">
-          <button type="submit" class="add-burger-btn" id="add-brgr">Add</button>
+          <button type="submit" class="btn btn-outline-primary" id="add-brgr">Add</button>
         </div>
   </div>
 </form>
 
-<div class="container">
-
-<div class="d-flex flex-row justify-content-around">
-<div class="undevoured-list card p-3">
-  <h4>Not devoured</h4>
+<div class="d-flex align-items-center justify-content-around">
+<div class="jumbotron bg-light" id="orderUp">
+  <h4>Order Up</h4>
   <ul id="not-d-list">
     {{#each burgers}}
     {{#unless devoured}}
@@ -29,7 +27,7 @@
   </ul>
 </div>
 
-<div class="devoured-list card p-3">
+<div class="jumbotron bg-light" id="devouredList">
   <h4>Devoured</h4>
   <ul id="d-list">
     {{#each burgers}}
