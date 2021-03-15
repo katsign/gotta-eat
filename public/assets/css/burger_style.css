@@ -1,14 +1,14 @@
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  background-color: whitesmoke !important;
+  background-color: darkslategrey !important;
 }
 
 :root {
-  --light: thistle;
-  --dark: rgb(146, 110, 146);
-  --primary: darkseagreen;
-  --secondary: lightsalmon;
+  --light: linen;
+  --dark: darkslategrey;
+  --primary: khaki;
+  --secondary: thistle;
 }
 
 .bg-light {
