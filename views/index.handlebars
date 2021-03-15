@@ -1,24 +1,26 @@
 <div class="container">
 
+<div class="d-flex align-items-center justify-content-around">
+<div id="addBurger">
+<img src="/assets/img/burger.png" width="222px" alt="burger icon" id="burgerImg">
 <form class="form-inline" id="create-form">
-  <div class="form-group">
+  <div class="form-group m-3">
     <input type="text"
            id="brgr"
            name="burger_name"
            class="form-control"
-           placeholder="Enter Text"
+           placeholder="Add a New Burger"
            aria-label="Burger Name"
            aria-describedby="add-brgr">
-           <div class="input-group-append">
-          <button type="submit" class="btn btn-outline-primary" id="add-brgr">Add</button>
-        </div>
+          <button type="submit" class="btn btn-secondary"><i class="material-icons">queue</i> Order</button>
   </div>
 </form>
+</div>
 
-<div class="d-flex align-items-center justify-content-around">
-<div class="jumbotron bg-light" id="orderUp">
+<div class="jumbotron bg-light m-3">
   <h4>Order Up</h4>
-  <ul id="not-d-list">
+  <hr>
+  <ul class="list-group">
     {{#each burgers}}
     {{#unless devoured}}
     {{> burgers/burger-block devour=true}}
@@ -27,9 +29,10 @@
   </ul>
 </div>
 
-<div class="jumbotron bg-light" id="devouredList">
+<div class="jumbotron bg-light m-3">
   <h4>Devoured</h4>
-  <ul id="d-list">
+  <hr>
+  <ul class="list-group">
     {{#each burgers}}
     {{#if devoured}}
     {{> burgers/burger-block devour=false}}
@@ -38,4 +41,5 @@
   </ul>
 </div>
 </div>
+
 </div>

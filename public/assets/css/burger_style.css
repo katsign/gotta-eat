@@ -1,64 +1,7 @@
 body {
+  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  background-color: darkslategrey !important;
-}
-
-:root {
-  --light: linen;
-  --dark: darkslategrey;
-  --primary: khaki;
-  --secondary: thistle;
-}
-
-.bg-light {
-  background-color: var(--light) !important;
-}
-.bg-dark {
-  background-color: var(--dark) !important;
-}
-.bg-primary {
-  background-color: var(--primary) !important;
-}
-.bg-secondary {
-  background-color: var(--secondary) !important;
-}
-
-/* Icon Styling */
-.material-icons {
-  display: inline-flex;
-  vertical-align: top;
-}
-.material-icons.md-32 {
-  font-size: 32px;
-}
-.material-icons.md-light {
-  color: rgba(255, 255, 255, 1);
-}
-
-.d-flex {
-  flex-flow: wrap;
-}
-
-.card {
-  min-width: 20rem;
-  background-color: transparent;
-}
-
-.list-group {
-  display: flex;
-  flex-direction: column;
-  padding-left: 0;
-  margin-bottom: 0;
-}
-.list-group-item {
-  position: relative;
-  display: block;
-  padding: 0.75rem 1.25rem;
-  background-color: whitesmoke;
-}
-
-.gradient {
   background: rgb(230, 230, 250);
   background: linear-gradient(
     360deg,
@@ -67,7 +10,86 @@ body {
   ) !important;
 }
 
-@media (max-width: 690px) {
+:root {
+  --light: transparent;
+  --secondary: thistle;
+}
+
+.container {
+  width:100vw;
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#addBurger {
+  flex-direction: column;
+}
+#burgerImg {
+  padding-left: 1rem;
+}
+
+.bg-light {
+  background-color: var(--light) !important;
+}
+.bg-dark {
+  background-color: var(--dark) !important;
+}
+.bg-secondary {
+  background-color: var(--secondary) !important;
+}
+
+.btn-secondary {
+  background-color: thistle;
+  border-color: thistle;
+}
+.btn-secondary:hover {
+  background-color: plum;
+  border-color: plum;
+}
+.btn-secondary:active,
+.btn-secondary:focus {
+  background-color: plum;
+  border-color: plum!important;
+  box-shadow: 0 0 0 0.2rem plum!important;
+}
+
+.btn-light {
+  color: white;
+  background-color: pink;
+  border-color: pink;
+}
+.btn-light:hover {
+  color: white;
+  background-color: palevioletred;
+  border-color: palevioletred;
+}
+.btn-light:active,
+.btn-light:focus {
+  color: white;
+  background-color: palevioletred;
+  border-color: palevioletred!important;
+  box-shadow: 0 0 0 0.2rem palevioletred!important;
+}
+
+ul {
+  list-style: none;
+}
+
+.material-icons {
+  display: inline-flex;
+  vertical-align: top;
+}
+
+.list-group {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+@media (max-width: 999px) {
   .d-flex {
     flex-direction: column;
   }
