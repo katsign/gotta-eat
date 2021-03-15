@@ -2,10 +2,10 @@
 	{{burger_name}}
 
 	<div>
-		<button class="change-devour" data-id="{{id}}" data-newdevour="{{devour}}">
-			{{#if devour}}DEVOUR{{else}}RE-ORDER{{/if}}
+		<button class="change-devour btn btn-sm btn-secondary" data-id="{{id}}" data-newdevour="{{devour}}">
+			{{#if devour}}<i class="material-icons" style="font-size: 18px">restaurant</i> Devour {{else}}<i class="material-icons" style="font-size: 18px">refresh</i> Reorder{{/if}}
 		</button>
 
-		<button class="delete-burger" data-id="{{this.id}}">DELETE</button>
+		<button class="delete-burger btn btn-sm btn-light" data-id="{{this.id}}"><i class="material-icons" style="font-size: 18px">delete</i> Delete</button>
 	</div>
 </li>
