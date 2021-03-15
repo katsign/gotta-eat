@@ -17,7 +17,7 @@ router.post("/api/burgers", (req, res) => {
   if (req.body.devoured === "true") {
     devoured = 1;
   }
-  burger.insert(
+  burger.create(
     ["burger_name", "devoured"],
     [req.body.burger_name, devoured],
     (result) => {

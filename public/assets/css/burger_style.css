@@ -1,82 +1,74 @@
 body {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    background-color: whitesmoke !important;
-  }
-  
-  p,
-  h2 {
-    color: white !important;
-  }
-  
-  :root {
-    --light: thistle;
-    --dark: rgb(146, 110, 146);
-    --primary: darkseagreen;
-    --secondary: lightsalmon;
-  }
-  
-  .bg-light {
-    background-color: var(--light) !important;
-  }
-  .bg-dark {
-    background-color: var(--dark) !important;
-  }
-  .bg-primary {
-    background-color: var(--primary) !important;
-  }
-  .bg-secondary {
-    background-color: var(--secondary) !important;
-  }
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  background-color: whitesmoke !important;
+}
 
-  
+:root {
+  --light: thistle;
+  --dark: rgb(146, 110, 146);
+  --primary: darkseagreen;
+  --secondary: lightsalmon;
+}
+
+.bg-light {
+  background-color: var(--light) !important;
+}
+.bg-dark {
+  background-color: var(--dark) !important;
+}
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+.bg-secondary {
+  background-color: var(--secondary) !important;
+}
+
 /* Icon Styling */
 .material-icons {
-    display: inline-flex;
-    vertical-align: top;
+  display: inline-flex;
+  vertical-align: top;
 }
 .material-icons.md-32 {
-    font-size: 32px;
+  font-size: 32px;
 }
 .material-icons.md-light {
-    color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
 }
-  
+
 .d-flex {
-    flex-flow: wrap;
+  flex-flow: wrap;
 }
-  
+
 .card {
-    min-width: 20rem;
-    background-color: transparent;
+  min-width: 20rem;
+  background-color: transparent;
 }
-  
+
 .list-group {
-    display: flex;
-    flex-direction: column;
-    padding-left: 0;
-    margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
 }
 .list-group-item {
-    position: relative;
-    display: block;
-    padding: 0.75rem 1.25rem;
-    background-color: whitesmoke;
+  position: relative;
+  display: block;
+  padding: 0.75rem 1.25rem;
+  background-color: whitesmoke;
 }
-
 
 .gradient {
-    background: rgb(230, 230, 250);
-    background: linear-gradient(
-      360deg,
-      rgba(230, 230, 250, 1) 28%,
-      rgba(216, 191, 216, 1) 100%
-    );
+  background: rgb(230, 230, 250);
+  background: linear-gradient(
+    360deg,
+    rgba(230, 230, 250, 1) 28%,
+    rgba(216, 191, 216, 1) 100%
+  ) !important;
 }
-  
 
 @media (max-width: 690px) {
-    .d-flex {
-      flex-direction: column;
-    }
+  .d-flex {
+    flex-direction: column;
+  }
 }
