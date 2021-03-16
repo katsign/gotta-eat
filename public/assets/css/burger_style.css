@@ -97,5 +97,9 @@ ul {
   }
   .d-flex {
     flex-direction: column;
+    justify-content:space-evenly;
+  }
+  input {
+    width: 122px!important;
   }
 }

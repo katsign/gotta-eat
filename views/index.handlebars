@@ -4,15 +4,19 @@
 <div id="addBurger">
 <img src="/assets/img/burger.png" width="222px" alt="burger icon" id="burgerImg">
 <form class="form-inline" id="create-form">
-  <div class="form-group m-3">
-    <input type="text"
+  <div class="form-group">
+    <div class="input-group m-3">
+      <input type="text"
            id="brgr"
            name="burger_name"
            class="form-control"
            placeholder="Add a New Burger"
            aria-label="Burger Name"
            aria-describedby="add-brgr">
-          <button type="submit" class="btn btn-secondary"><i class="material-icons">queue</i> Order</button>
+           <div class="input-group-append">
+          <button type="submit" class="btn btn-secondary" id="add-brgr"><i class="material-icons">queue</i> Order</button>
+      </div>
+    </div>
   </div>
 </form>
 </div>
