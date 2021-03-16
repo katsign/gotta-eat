@@ -29,6 +29,9 @@ body {
 #burgerImg {
   padding-left: 1rem;
 }
+input {
+  width: 174px!important;
+}
 
 .bg-light {
   background-color: var(--light) !important;
