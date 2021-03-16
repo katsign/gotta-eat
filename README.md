@@ -22,7 +22,7 @@ This application uses Handlebars and Express to serve static files in a dynamic 
 - Navigate to the `/config` folder and update the MySQL connection information to match your own Workbench instance.
 
 ## *Usage*
-### 📍 [View the deployment on Heroku](path)
+### 📍 [View the deployment on Heroku](https://katsign-gotta-eat.herokuapp.com/)
 - To start the development server, type `npm start` in your terminal.
 - To add a new order to the database, click into `Add a New Burger`, input your new item, then press `Order`.
 - Move items between the `Order Up` and `Devoured` columns by clicking the corresponding buttons.
