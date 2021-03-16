@@ -89,7 +89,12 @@ ul {
   margin-bottom: 0;
 }
 
-@media (max-width: 999px) {
+@media (max-width: 1014px) {
+  .container {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 3rem;
+  }
   .d-flex {
     flex-direction: column;
   }
